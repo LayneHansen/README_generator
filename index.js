@@ -40,6 +40,7 @@ inquirer
 
 {
     type: "list",
+    name: "license",
     message: "Which open source license would you like to attach to your README?",
     choices: 
         [
@@ -56,27 +57,26 @@ inquirer
 
 }
 
-
 ])
 
 .then(function(response) {
-    console.log(reponse);
-    if (response) {
-    const {title, description, installation, usage, contributor, tests}
-    console.log(title, description, installation, usage, contributor, tests);
-    }
+    console.log(response);
+//     if (response) {
+//     const {title, description, installation, usage, contributor, tests, license}
+// }
 
 })
+
 
 // function to write README file
 function writeToFile(fileName, data) {
 }
 
 // function to initialize program
-function init() {
-    const
+// function init() {
+//     const
 
-}
+// }
 
 // function call to initialize program
-init();
+// init();
