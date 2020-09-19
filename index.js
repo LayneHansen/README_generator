@@ -12,27 +12,27 @@ inquirer
 {
     type: "input",
     message: "What is the description of your project?",
-    name: "title"
+    name: "description"
 },
 {
     type: "input",
     message: "What are the installation instructions for your project?",
-    name: "title"
+    name: "installation"
 },
 {
     type: "input",
     message: "What is the usage information for your project?",
-    name: "title"
+    name: "usage"
 },
 {
     type: "input",
     message: "Who contributed to your project?",
-    name: "title"
+    name: "contributor"
 },
 {
     type: "input",
     message: "Are there any tests included in your project?",
-    name: "title"
+    name: "tests"
 },
 
 
