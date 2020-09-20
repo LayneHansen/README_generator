@@ -1,9 +1,6 @@
 const fs = require("fs");
 const generateMarkdown = require("./generateMarkdown");
 
-// let md = generateMarkdown({title: , description: "bigly"}); 
-// console.log(md);
-
 // array of questions for user
 
 var inquirer = require("inquirer");
@@ -63,15 +60,11 @@ inquirer
 
     ])
 
-    .then(function (response) {
-        generateMarkdown(response);
+    .then(function(response) {
+        // generateMarkdown(response);
         var input = generateMarkdown(response);
         console.log(input)
-        //     if (response) {
-        //     const {title, description, installation, usage, contributor, tests, license}
-        //     console.log(title, description, installation, usage, contributor, tests, license);
-        // }
-
+        writeToFile("READMEgen.md", input);
     })
 
 
@@ -86,20 +79,21 @@ function writeToFile(fileName, data) {
           return console.log(err);
         }
       
-        // console.log("Success!");
-      
-      });
+    });
 }
 
-writeToFile("READMEgen.md", input);
+// writeToFile("READMEgen.md", input);
 
-// console.log(writeToFile);
+// // console.log(writeToFile);
 
-// // function to initialize program
+// // // function to initialize program
 // function init() {
-//     const
-
+//     prompt(inquirer).then(input => {
+    
+//     const response = generateMarkdown()
+//     writeToFile("READMEgen.md", response);
 // }
+// )};
 
-// // function call to initialize program
-// // init();
+// // // function call to initialize program
+// init();
