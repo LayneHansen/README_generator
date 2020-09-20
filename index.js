@@ -1,82 +1,105 @@
 const fs = require("fs");
-const gm = require("./generateMarkdown");
+const generateMarkdown = require("./generateMarkdown");
+
+// let md = generateMarkdown({title: , description: "bigly"}); 
+// console.log(md);
 
 // array of questions for user
+
 var inquirer = require("inquirer");
-console.log(inquirer);
+
+// console.log(inquirer);
 
 inquirer
-.prompt([
-{
-    type: "input",
-    message: "What is the title of your project?",
-    name: "title"
-},
-{
-    type: "input",
-    message: "What is the description of your project?",
-    name: "description"
-},
-{
-    type: "input",
-    message: "What are the installation instructions for your project?",
-    name: "installation"
-},
-{
-    type: "input",
-    message: "What is the usage information for your project?",
-    name: "usage"
-},
-{
-    type: "input",
-    message: "Who contributed to your project?",
-    name: "contributor"
-},
-{
-    type: "input",
-    message: "Are there any tests included in your project?",
-    name: "tests"
-},
+    .prompt([
+        {
+            type: "input",
+            message: "What is the title of your project?",
+            name: "title"
+        },
+        {
+            type: "input",
+            message: "What is the description of your project?",
+            name: "description"
+        },
+        {
+            type: "input",
+            message: "What are the installation instructions for your project?",
+            name: "installation"
+        },
+        {
+            type: "input",
+            message: "What is the usage information for your project?",
+            name: "usage"
+        },
+        {
+            type: "input",
+            message: "Who contributed to your project?",
+            name: "contributor"
+        },
+        {
+            type: "input",
+            message: "Are there any tests included in your project?",
+            name: "tests"
+        },
+        {
+            type: "list",
+            name: "license",
+            message: "Which open source license would you like to attach to your README?",
+            choices: 
+                [
+                "Apache License 2.0",
+                "BSD 3-Clause 'New' or 'Revised' license",
+                "BSD 2-Clause 'Simplified or 'FreeBSD' license",
+                "GNU General Public License (GPL)",
+                "GNU Library or 'Lesser' General Public License (LGPL)",
+                "MIT license",
+                "Mozilla Public License 2.0",
+                "Common Development and Distribution License",
+                "Eclipse Public License version 2.0",
+            ]    
 
-{
-    type: "list",
-    name: "license",
-    message: "Which open source license would you like to attach to your README?",
-    choices: 
-        [
-        "Apache License 2.0",
-        "BSD 3-Clause 'New' or 'Revised' license",
-        "BSD 2-Clause 'Simplified or 'FreeBSD' license",
-        "GNU General Public License (GPL)",
-        "GNU Library or 'Lesser' General Public License (LGPL)",
-        "MIT license",
-        "Mozilla Public License 2.0",
-        "Common Development and Distribution License",
-        "Eclipse Public License version 2.0",
-    ]    
+        }
 
-}
+    ])
 
-])
+    .then(function (response) {
+        generateMarkdown(response);
+        var input = generateMarkdown(response);
+        console.log(input)
+        //     if (response) {
+        //     const {title, description, installation, usage, contributor, tests, license}
+        //     console.log(title, description, installation, usage, contributor, tests, license);
+        // }
 
-.then(function(response) {
-    console.log(response);
-//     if (response) {
-//     const {title, description, installation, usage, contributor, tests, license}
-// }
-
-})
+    })
 
 
 // function to write README file
+
 function writeToFile(fileName, data) {
+    // console.log("writeToFile");
+
+    fs.writeFile(fileName, data, function(err) {
+
+        if (err) {
+          return console.log(err);
+        }
+      
+        // console.log("Success!");
+      
+      });
 }
 
-// function to initialize program
+writeToFile("READMEgen.md", input);
+
+// console.log(writeToFile);
+
+// // function to initialize program
 // function init() {
 //     const
 
 // }
 
-// function call to initialize program
-// init();
+// // function call to initialize program
+// // init();
