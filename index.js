@@ -56,7 +56,18 @@ inquirer
                 "Eclipse Public License version 2.0",
             ]    
 
+        },
+       { 
+        type: "input",
+        message: "What is your Github username?",
+        name: "username"
+        },
+       { 
+        type: "input",
+        message: "Are there any tests included in your project?",
+        name: "email"
         }
+
 
     ])
 

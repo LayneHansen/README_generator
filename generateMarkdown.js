@@ -10,13 +10,27 @@ function generateMarkdown(data) {
 * [Contributors](#contributor)
 * [Tests](#tests)
 * [License](#license)
+* [Questions](#)
 
-## ${data.description}
-## ${data.installation}
-## ${data.usage}
-## ${data.contributor}
-## ${data.tests}
-## ${data.license}
+## Description
+${data.description}
+
+## Installation Instructions
+${data.installation}
+
+## Usage Information
+${data.usage}
+
+## Contributors
+${data.contributor}
+
+## Tests 
+${data.tests}
+
+## License
+${data.license}
+
+<br>
 
 ## Questions and Comments
 
