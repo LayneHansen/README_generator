@@ -45,27 +45,33 @@ inquirer
             message: "Which open source license would you like to attach to your README?",
             choices: 
                 [
-                "Apache License 2.0",
-                "BSD 3-Clause 'New' or 'Revised' license",
-                "BSD 2-Clause 'Simplified or 'FreeBSD' license",
-                "GNU General Public License (GPL)",
-                "GNU Library or 'Lesser' General Public License (LGPL)",
-                "MIT license",
-                "Mozilla Public License 2.0",
-                "Common Development and Distribution License",
-                "Eclipse Public License version 2.0",
+                "Apache_License_2.0",
+                "BSD_3-Clause_'New'_or_'Revised' license",
+                "BSD_2-Clause_'Simplified_or_'FreeBSD'_license",
+                "GNU_General_Public_License_(GPL)",
+                "GNU_Library_or_'Lesser'_General_Public_License_(LGPL)",
+                "MIT_license",
+                "Mozilla_Public_License_2.0",
+                "Common_Development_and_Distribution_License",
+                "Eclipse_Public_License_version_2.0",
             ]    
 
         },
+
        { 
-        type: "input",
-        message: "What is your Github username?",
-        name: "username"
+            type: "input",
+            message: "Do you have further questions?",
+            name: "questions"
         },
        { 
-        type: "input",
-        message: "Are there any tests included in your project?",
-        name: "email"
+            type: "input",
+            message: "What is your Github username?",
+            name: "username"
+        },
+       { 
+            type: "input",
+            message: "What is your email?",
+            name: "email"
         }
 
 

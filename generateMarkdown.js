@@ -10,7 +10,7 @@ function generateMarkdown(data) {
 * [Contributors](#contributor)
 * [Tests](#tests)
 * [License](#license)
-* [Questions](#)
+* [Questions](#questions)
 
 ## Description
 ${data.description}
@@ -29,7 +29,8 @@ ${data.tests}
 
 ## License
 ${data.license}
-
+<br><br>
+![License Badge](https://img.shields.io/badge/License-${data.license}-brightgreen)
 <br>
 
 ## Questions and Comments
@@ -38,7 +39,7 @@ For questions and comments, contact me at:
 
 Github: [${data.username}](https://github.com/LayneHansen)
 
-Email: [${data.email}](https://github.com/LayneHansen)
+Email: ${data.email}
     
   `;
 }
