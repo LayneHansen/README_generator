@@ -82,9 +82,7 @@ function writeToFile(fileName, data) {
     });
 }
 
-// writeToFile("READMEgen.md", input);
 
-// // console.log(writeToFile);
 
 // // // function to initialize program
 // function init() {
