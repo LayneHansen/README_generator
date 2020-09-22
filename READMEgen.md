@@ -1,7 +1,6 @@
-# README Generator
+# New Project
 
 ## Table of Contents
-* [Images](#images)
 * [Description](#description)
 * [Installation Instructions](#installation)
 * [Usage Information](#usage)
@@ -10,35 +9,25 @@
 * [License](#license)
 * [Questions](#questions)
 
-## Images
-
-Node View:
-
-![Node View](./nodeview_screenshot.png)
-
-Final Product:
-
-![Final Product](./README_gen_screenshot.png)
-
 ## Description
-This application dynamically creates a usable README file using Node.js.
+This is a new project.
 
 ## Installation Instructions
-
+Install to your heart's content.
 
 ## Usage Information
-
+You have permission to use this.
 
 ## Contributors
-Layne D. Hansen
+Me.
 
 ## Tests 
-None.
+No tests.
 
 ## License
-MIT_license
+Apache_License_2.0
 <br><br>
-![License Badge](https://img.shields.io/badge/License-MIT_license-brightgreen)
+![License Badge](https://img.shields.io/badge/License-Apache_License_2.0-brightgreen)
 <br>
 
 ## Questions
