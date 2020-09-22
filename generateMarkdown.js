@@ -33,7 +33,7 @@ ${data.license}
 ![License Badge](https://img.shields.io/badge/License-${data.license}-brightgreen)
 <br>
 
-## Questions and Comments
+## Questions
 
 For questions and comments, contact me at:
 

@@ -57,18 +57,17 @@ inquirer
             ]    
 
         },
-
-       { 
+        { 
             type: "input",
             message: "Do you have further questions?",
             name: "questions"
         },
-       { 
+        { 
             type: "input",
             message: "What is your Github username?",
             name: "username"
         },
-       { 
+        { 
             type: "input",
             message: "What is your email?",
             name: "email"
