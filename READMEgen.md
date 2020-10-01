@@ -1,4 +1,6 @@
-# New Project
+# Template Engine
+
+![License Badge](https://img.shields.io/badge/License-MIT_license-brightgreen)
 
 ## Table of Contents
 * [Description](#description)
@@ -10,24 +12,23 @@
 * [Questions](#questions)
 
 ## Description
-This is a new project.
+This application allows the user to create cards that display information about team members. More prompts can be added as needed.
 
 ## Installation Instructions
-Install to your heart's content.
+Clone file from repository into your own repository and run from node.
 
 ## Usage Information
-You have permission to use this.
+Those interested may use this file as needed.
 
 ## Contributors
-Me.
+Layne D. Hansen
 
 ## Tests 
-No tests.
+Yes
 
 ## License
-Apache_License_2.0
+MIT_license
 <br><br>
-![License Badge](https://img.shields.io/badge/License-Apache_License_2.0-brightgreen)
 <br>
 
 ## Questions
@@ -36,6 +37,6 @@ For questions and comments, contact me at:
 
 Github: [LayneHansen](https://github.com/LayneHansen)
 
-Email: laynehansen.dev@gmail.com
+Email: layne.d.hansen@gmail.com
     
   
